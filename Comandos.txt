@@ -1,0 +1,29 @@
+Control d -> escribo lo mismo en las diferentes lineas que selecciono
+
+
+GIT:
+git clone -> conectarse a un repositorio
+git remote -v -> revisar en q repositorio estoy
+
+
+
+React:
+npx create-react-app Nombre  -> Crear la carpeta React
+ cd Nombre  -> Seleccionar la carpeta react
+ npm start  -> Iniciar react (Para visualizar la pagina)
+
+
+git init
+git status
+git add .
+gitt commit -m " texto"
+git branch -M main
+git remote add origin https://github.com/OscarLobo15/LosMaMaOs.git
+git push -u origin main
+
+
+si salen error:
+git checkout main
+git branch --unset-upstream
+git branch -u origin/main
+git push -f origin main
