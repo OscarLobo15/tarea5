@@ -1,11 +1,9 @@
-
 import NavBar from "./components/NavBar";
 import Hero from "./components/Hero";
 import Main from "./components/Main";
 import "./CSS/style.css";
 
-
-function App() {
+function Martin() {
   return (
     <div className="App">
       < NavBar />
@@ -20,4 +18,4 @@ function App() {
   );
 }
 
-export default App;
+export default Martin;

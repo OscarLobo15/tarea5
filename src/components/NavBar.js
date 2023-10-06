@@ -1,16 +1,19 @@
 import React from "react";
+import {BrowserRouter, Link} from "react-router-dom";
 
 function NavBar() {
-  const Nav = ["Inicio", "Max", "Martín", "Oscar"];
-  const Pag = ["#", "#", "#", "#"];
-
-  const navItems = Nav.map((Indice, index) => (
-    <div key={index} className="topnav">
-      <a href={Pag[index]}>{Indice}</a>
+  return(
+    <div class="nav-bg">
+    <div class="topnav">
+        <a href="Index.html">Inicio</a>
+        <a href="Max.html">Max</a>
+        <a href="Martin.html">Martin</a>
+        <a href="Oscar.html">Oscar</a>
     </div>
-  ));
+</div>
 
-  return <div className="nav-bg">{navItems}</div>;
+  );
 }
+
 
 export default NavBar;
