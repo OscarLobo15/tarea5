@@ -1,16 +1,16 @@
 import react from "react";
 
 
-function Hero() {
-    return(
-        <section class="hero">
-            <div class="contenido-hero">
-                <h2 class="nombre">Grupo Los Mamaos</h2>
-            </div>
+function Hero({ texto1, texto2 }) {
+    return (
+      <section className="hero">
+        <div className="contenido-hero">
+          <h2 className="nombre">{texto1}</h2>
+          <h3 class="Estudios"> {texto2}</h3>
 
-        </section>
-
+        </div>
+      </section>
     );
-}
-
-export default Hero;
+  }
+  
+  export default Hero;

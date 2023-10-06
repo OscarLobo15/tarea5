@@ -75,7 +75,7 @@ body {
 }
 
 .hero {
-    background-image: url(/Oscar.JPG);
+    background-image: url(../imagenes/Oscar.JPG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
