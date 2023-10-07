@@ -75,7 +75,7 @@ body {
 }
 
 .hero {
-    background-image: url(/FondoMartin.jpg);
+    background-image: url(../imagenes/FondoMartin.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

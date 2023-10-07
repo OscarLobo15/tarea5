@@ -1,43 +1,29 @@
-
 import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Main from "./components/Main";
-import imagen1 from "./imagenes/Imagenes/Oscar.JPG";
-import imagen2 from "./imagenes/Imagenes/Martin.jpeg";
-import imagen3 from "./imagenes/Imagenes/Max.jpg";
+import Inicio from "./components/Inicio";
+import Oscar from "./components/Oscar";
+import Max from "./components/Max";
+import Martin from "./components/Martin";
+import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import "./CSS/style.css";
+
 
 
 function App() {
   return (
     <div className="App">
-      < NavBar />
-      < Hero 
-      texto1="Grupo Los Mamaos"
-      texto2=""
-      />
-      <main className="content shadow">
-        <div className="subject">
+      <BrowserRouter>
+        < NavBar />
         
-          <Main
-            nombre="Oscar Lobo"
-            imagen={imagen1}
-            carrera="Estudiante Ingeniería Civil Informática e Industrial"
-          />
-          <Main
-            nombre="Martín Dávila"
-            imagen={imagen2}
-            carrera="Estudiante Ingeniería Civil Industrial e Informática"
-          />
-          <Main
-            nombre="Max Wallace"
-            imagen={imagen3}
-            carrera="Estudiante Ingeniería Civil Informática"
-          />
-        </div>
-      </main> 
-      
+        <Routes>
+          <Route exact path="/" element={<Inicio/>}/>
+          <Route exact path="/inicio" element={<Inicio/>}/>
+          <Route exact path="/oscar" element={<Oscar/>}/>
+          <Route exact path="/max" element={<Max/>}/>
+          <Route exact path="/martin" element={<Martin/>}/>
 
+        </Routes>
+      
+      </BrowserRouter>
       
     </div>
   );
